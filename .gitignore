@@ -1,0 +1,56 @@
+# =============================================================================
+# C Language .gitignore - llama2.c/
+# =============================================================================
+
+# Compiled executables (no extension on Linux)
+run
+runq
+test_run
+test_run_flat
+extract_weights
+dump_weights
+check_weights
+gen_ref_logits
+gen_layer_debug
+generate_reference_logits
+test_layer0_attention
+test_single_token
+
+**/*.log
+# Object files and libraries
+*.o
+*.a
+*.so
+obj_dir/
+
+# Generated weight data (~275MB)
+model_data.c
+
+# Model binary files (download separately)
+*.bin
+
+# Debug/reference output files
+c_*.txt
+*_debug*.txt
+*_logits*.txt
+*_weights*.txt
+
+# Backup files
+run\ copy.c
+*.bak
+*.orig
+
+# Session-specific docs
+*_STATUS.md
+*_SUMMARY.md
+*_REPORT.md
+BUG_*.md
+FIX*.md
+NEXT_*.md
+SESSION_*.md
+WEEK*_*.md
+
+# Editor directories
+.vscode/
+.claude-flow/
+.hive-mind/
